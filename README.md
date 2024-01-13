@@ -15,15 +15,14 @@ $`
 with $`\Delta u = \frac{\partial^2 u}{\partial x^2}+\frac{\partial^2 u}{\partial y^2}`$ the laplacian of $`u`$, $`c`$ the speed of the wave in this medium, $`s`$ the source. 
 
 We translate this partial differential equation into a recurrence relation on $`u`$ by using the following result (a classical relation used for the finite difference method): 
-$`\frac{\partial^2 f}{\partial x^2}(x,t) ~ \frac{1}{\delta_x^2}(f_{i+1, j} + f_{i-1, j} - 2f_{i,j})`$
-
-with the notation $`f_{i,j} = f(x_i, t_j)`$. 
+$`\frac{\partial^2 f}{\partial x^2}(x,t) \backsim \frac{1}{\delta_x^2}(f_{i+1, j} + f_{i-1, j} - 2f_{i,j})`$ with the notation $`f_{i,j} = f(x_i, t_j)`$. 
 
 We get the following update equation on $`u`$:
 
 $`
-u_{i,j}^{k+1} = 2u_{i,j}^{k} - u_{i,j}^{k-1} + \gamma_x(u_{i-1,j}^k + u_{i+1,j}^k - 2 u{i,j}^k) + \gamma_y (u_{i,j-1}^k + u_{i,j+1}^k - 2u_{i,j}^k)
+u_{i,j}^{k+1} = 2u_{i,j}^{k} - u_{i,j}^{k-1} + \gamma_x(u_{i-1,j}^k + u_{i+1,j}^k - 2 u_{i,j}^k) + \gamma_y (u_{i,j-1}^k + u_{i,j+1}^k - 2u_{i,j}^k)
 `$
+
 with $`\gamma_x = \frac{c^2 \delta_t^2}{\delta_x^2}`$ and $`\gamma_y = \frac{c^2 \delta_t^2}{\delta_y^2}`$ and the analog notation $`u_{i,j}^k = u(x_i, y_j, t_k)`$.
 
 For the limit conditions, we set the border of the map at 0 (limit conditions of Dirichlet).
