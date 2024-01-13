@@ -50,9 +50,7 @@ The original time reversal idea was developped by Mathias Fink in various projec
 
 This simulation could be applied to telecommunications : the phone emits a pulse, which is captured by the antennas. The antennas can then target the position of the phone, leveraging the shape of the environment to their advantage. 
 
-The idea to apply time reversal to telecommunications was developped in the following PhD thesis, by Geoffroy Lerosey, under the direction of Matthias Fink.
+The idea to apply time reversal to telecommunications was developped in the following PhD thesis, by Geoffroy Lerosey, under the direction of Matthias Fink:
 
-Geoffroy Lerosey. Retournement temporel d’ondes électromagnétiques et application à la télécommunication
-en milieux complexes. Physics [physics]. ESPCI ParisTECH, 2006. English. ￿NNT : ￿.
-￿pastel-00003585￿
+> Geoffroy Lerosey. Retournement temporel d’ondes électromagnétiques et application à la télécommunication en milieux complexes. Physics [physics]. ESPCI ParisTECH, 2006. English. ￿NNT : ￿. ￿pastel-00003585￿
 
