@@ -38,14 +38,12 @@ The number of antennas can be modified in the `Emission` class, positions are au
 
 The results are stored in .gif files for visualization, below are displayed an emission example and the corresponding focus:
 
-![alt text](emission. gif) / ! [](emission. gif)
+<img src="https://github.com/nastassiatardy/time-reversal/blob/main/emission.gif" width="500" height="400" /> <img src="https://github.com/nastassiatardy/time-reversal/blob/main/focus.gif" width="500" height="400" />
 
-![alt text](focalisation. gif) / ! [](focus. gif)
-
-In the `focus.gif` file we can see the refocus happenning at 1000 steps, which is logical as the antennas store signal for 1000 steps (this can be changed by changing the `DELTA_T` value; the number of steps is equal to $`10 \times \frac{1}{\text{DELTA_T}}`$).
+In the `focus.gif` file we can see the refocus happenning at 1000 steps, which is logical as the antennas store signal for 1000 steps (this can be changed by changing the `DELTA_T` value; the number of steps is equal to $`10 \times \frac{1}{\text{DELTA\_T}}`$).
 We look at the influence of adding antennas on the quality of refocus:
 
-![alt text](https://github.com/nastassiatardy/time-reversal/main/mean_std.png?raw=true)
+![My Image](https://github.com/nastassiatardy/time-reversal/blob/main/mean_std.png)
 
 ### Bibliography
 
