@@ -24,20 +24,20 @@ def fig_analysis(path):
         fig_path = os.getcwd() + '/' + path + "/" + fig
         im = plt.imread(fig_path)
         antennas_list.append(int(fig.split('antennas')[0]))
-        means.append(100*np.mean(im)/mean_0)
-        stds.append(100*np.std(im)/std_0)
+        means.append(np.mean(im))
+        stds.append(np.std(im))
     
     fig, ax = plt.subplots(1, 2, figsize=(24, 7))
     ax[0].plot(antennas_list, means)
     ax[0].scatter(antennas_list, means, s=10)
     ax[0].set_xlabel("Nb antennas", fontsize=15)
-    ax[0].set_ylabel("Mean value of refocus image (%)", fontsize=15)
+    ax[0].set_ylabel("Mean value of refocus image", fontsize=15)
     ax[0].grid()
 
     ax[1].plot(antennas_list, stds)
     ax[1].scatter(antennas_list, stds, s=10)
     ax[1].set_xlabel("Nb antennas", fontsize=15)
-    ax[1].set_ylabel("Std value of refocus image (%)", fontsize=15)
+    ax[1].set_ylabel("Std value of refocus image", fontsize=15)
     ax[1].grid()
 
     fig.suptitle("Influence of the number of antennas on the refocus", fontsize=30)

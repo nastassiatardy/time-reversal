@@ -91,7 +91,7 @@ class Emission():
         if render:
             frames = [f"emission/{it}.png" for it in range(10*Nt)]
             frames_im = [imageio.imread(fram) for fram in frames]
-            imageio.mimsave("emission.gif", frames_im, duration=20)
+            imageio.mimsave("emission.gif", frames_im, fps=50)
 
             for f in os.listdir("emission/"):
                 os.remove(f"emission/{f}")

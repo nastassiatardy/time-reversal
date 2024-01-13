@@ -71,7 +71,7 @@ class Focus:
         if render:
             frames = [f"focus/{it}.png" for it in range(10*Nt + 100)]
             frames_im = [imageio.imread(fram) for fram in frames]
-            imageio.mimsave("focus.gif", frames_im, duration=20)
+            imageio.mimsave("focus.gif", frames_im, fps=50)
 
             for f in os.listdir("focus/"):
                 os.remove(f"focus/{f}")
