@@ -29,8 +29,7 @@ For the limit conditions, we set the border of the map at 0 (limit conditions of
 
 ### Changing parameters
 
-The number of antennas can be modified in the `Emission` class, positions are automatically computed.
-
+The number of antennas can be modified in the `Emission` class; their positions are automatically computed.
 
 
 ### Results
@@ -43,6 +42,8 @@ In the `focus.gif` file we can see the refocus happenning at 1000 steps, which i
 We look at the influence of adding antennas on the quality of refocus:
 
 ![My Image](https://github.com/nastassiatardy/time-reversal/blob/main/mean_std.png)
+
+As expected, when increasing the number of antennas, the quality of refocus is enhanced.
 
 ### Bibliography
 
